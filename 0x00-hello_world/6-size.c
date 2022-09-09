@@ -5,17 +5,15 @@
  *
  * Return: Always 0 (Success)
  */
-int main() 
+int main(void)
 {
-    int intType;
-    float floatType;
-    double doubleType;
-    char charType;
+	int a;
+	char b;
+	float c;
+	double d;
 
-    printf("Size of int: %zu bytes\n", sizeof(intType));
-    printf("Size of float: %zu bytes\n", sizeof(floatType));
-    printf("Size of double: %zu bytes\n", sizeof(doubleType));
-    printf("Size of char: %zu byte\n", sizeof(charType));
-
-    return 0;
+	printf("Size of int: %zu bytes\n", sizeof(a));
+	printf("Size of char: %zu bytes\n", sizeof(b));
+	printf("Size of float: %zu bytes\n", sizeof(c));
+	printf("Size of double: %zu bytes\n", sizeof(d));
 }
