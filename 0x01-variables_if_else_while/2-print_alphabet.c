@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	char a, b;
+	char a;
 
 	a = 'A';
 
@@ -17,7 +17,7 @@ int main(void)
 		a = tolower(a);
 		putchar(a);
 		putchar('\n');
-		b++;
+		a++;
 	}
 	return (0);
 }
