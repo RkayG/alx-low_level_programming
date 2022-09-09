@@ -12,7 +12,8 @@ int main(void)
 	for (a = 0; a < 10; a++)
 		if (a != 10 && a < 10)
 		{
-			printf("%d\n", a);
+			printf("%d", a);
 		}
+	printf("\n");
 	return (0);
 }
