@@ -14,14 +14,20 @@ int main(void)
 	{
 		for (b = 0; b <= 9; b++)
 		{
-			if (a == b)
+			if (b == a)
 				continue;
-		{
-		putchar((a % 10) + '0');
-		putchar((b % 10) + '0');
-		putchar(',');
-		putchar(' ');
-		}
+			if (a < 9 && b == 0)
+				continue;
+			{
+				putchar((a % 10) + '0');
+				putchar((b % 10) + '0');
+			}
+			if (a == 8 && b == 9)
+				continue;
+			{
+				putchar(',');
+				putchar(' ');
+			}
 
 		}
 
