@@ -1,22 +1,22 @@
-#include <unistd.h>
 #include "main.h"
-
 /**
- * times_table - prints the 9 times table, starting from 0
- *
- * Return: Always 0
+ * times_table -  a function that prints the 9 times table, starting with 0
+ * rone = row, cone = column, d = digits of current result
+ * Return: times table
+ * add extra space past single digit
  */
-
 void times_table(void)
 {
 	int row, col, num;
 
 	for (row = 0; row <= 9; row++)
 	{
-		for (col = 0; col <= 9; col++)
+		_putchar('0');
+		_putchar(',');
+		_putchar(' ');
+		for (col = 1; col <= 9; col++)
 		{
 			num = (row * col);
-
 			if ((num / 10) > 0)
 			{
 				_putchar((num / 10) + '0');
@@ -25,9 +25,7 @@ void times_table(void)
 			{
 				_putchar(' ');
 			}
-
 			_putchar((num % 10) + '0');
-
 			if (col < 9)
 			{
 				_putchar(',');

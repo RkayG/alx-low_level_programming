@@ -12,8 +12,8 @@
 
 int add(int num1, int num2)
 {
-	result = num1 + num2;
+	int result;
 
-	_putchar(result + '0');
-	return (0);
+	result = (num1 + num2);
+	return (result);
 }
