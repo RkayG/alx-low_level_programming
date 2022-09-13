@@ -19,5 +19,46 @@ int _putchar(char c);
 
 void print_alphabet(void);
 
+/**
+ * print_alphabet_x10 - prints the alphabets in lowercase
+ * ten times.
+ *
+ * Return: null
+ */
+
+void print_alphabet_x10(void);
+
+ /**_islower - checks for lower case characters
+ *
+ * @c: the character to check for
+ *
+ * Return: on success 1
+ * On failure - 0
+ */
+
+int _islower(int c);
+
+/**
+ * _isalpha - checks for upper case characters
+ *
+ * @c: the character to check for
+ *
+ * Return: on success 1
+ * On failure - 0
+ */
+
+int _isalpha(int c);
+
+/**
+ * print_sign - prints the sign of a number
+ *
+ * @n: the number to check for
+ *
+ * Return: on success 1 and '+' if number is positive;
+ * 0 and prints '0' if zero; -1 and prints '-' if negative
+ */
+
+int print_sign(int n);
+
 #endif
 

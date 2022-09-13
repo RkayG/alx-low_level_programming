@@ -8,6 +8,10 @@
  */
 int main(void)
 {
-	print_alphabet();
+	int r;
+
+	r = _isalpha('P');
+	_putchar(r + '0');
+	_putchar('\n');
 	return (0);
 }
