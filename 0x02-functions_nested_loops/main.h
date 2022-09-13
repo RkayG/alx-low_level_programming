@@ -95,5 +95,15 @@ void jack_bauer(void);
  */
 
 void times_table(void);
+
+/**                                                              * add  - prints the sum of two integers
+ *
+ * @num1 & @num2: the values of integer
+ *
+ * Return: Always 0
+ */
+
+int add(int num1, int num2);
+
 #endif
 
