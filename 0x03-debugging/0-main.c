@@ -12,5 +12,5 @@ int main(void)
 	i = 98;
 	positive_or_negative(i);
 
-	return (printf("%d is positive", i));
+	return (write(1, "98 is positive\n", 14));
 }
