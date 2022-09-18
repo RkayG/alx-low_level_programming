@@ -25,24 +25,32 @@ void print_times_table(int n)
 					if (num <= 9)
 					{
 						_putchar('0' + num);
+						if (col == n)
+							continue;
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
+						_putchar(' ');
 					}
 					else if (num > 9 && num < 100)
 					{
 						_putchar('0' + (num / 10));
 						_putchar('0' + (num % 10));
+						if (col == n)
+							continue;
+						_putchar(',');
+						_putchar(' ');
+						_putchar(' ');
 					}
 					else if (num >= 100)
 					{
 						_putchar('0' + (num / 100));
 						_putchar('0' + (num / 10) % 10);
 						_putchar('0' + (num % 10));
-					}
-					if (col < n)
-					{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar(' ');
+						if (col == n)
+							continue;
+						_putchar(',');
+						_putchar(' ');
 					}
 			}
 			_putchar('\n');
