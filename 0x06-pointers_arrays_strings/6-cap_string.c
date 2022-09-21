@@ -1,18 +1,31 @@
 #include "main.h"
 
 /**
- * *string_toupper - changes all lowercase letters of a string to uppercase
+ * *cap_string - capitalizes all words of a string
  * @s: string to change
  * Return: changed string
  */
-char *string_toupper(char *s)
+char *cap_string(char *s)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	if (s[i] >= 'a' && s[i] <= 'z')
+		s[i] = s[i] - 'a' + 'A';
+	i++;
+
+	while (s[i] != '\0') /* iterate through string */
 	{
-		if (s[i] >= 'a' && s[i] <= 'z')
+
+		/* if lowercase and prior char is separator, capitalize*/
+		if ((s[i] >= 'a' && s[i] <= 'z')
+			&& (s[i - 1] == ',' || s[i - 1] == ';' || s[i - 1] == '.' ||
+			s[i - 1] == '!' || s[i - 1] == '?' || s[i - 1] == '"' ||
+			s[i - 1] == '(' || s[i - 1] == ')' || s[i - 1] == '{' ||
+			s[i - 1] == '}' || s[i - 1] == ' ' || s[i - 1] == '\t'
+			|| s[i - 1] == '\n'))
 			s[i] = s[i] - 'a' + 'A';
+		i++;
 	}
+
 	return (s);
 }
