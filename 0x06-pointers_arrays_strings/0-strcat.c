@@ -2,7 +2,7 @@
 
 /**
  * *_strcat - concantenates two strings
- * @dest: destination of string 
+ * @dest: destination of string
  * @src: source of string to append
  *
  * Return: string
