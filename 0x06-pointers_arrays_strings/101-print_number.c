@@ -13,6 +13,10 @@ void print_number(int n)
 		_putchar('-');
 		n = -n;
 	}
+	else
+	{
+		n = n;
+	}
 
 	/* remove last digit and recur */
 	if (n / 10)
