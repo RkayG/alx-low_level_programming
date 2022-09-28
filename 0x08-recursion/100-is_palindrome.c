@@ -2,8 +2,8 @@
 
 /**
  * compare - compare string in correct order as well as in reverse order
- * left: index from left
- * right: index from right
+ * @left: index from left
+ * @right: index from right
  * Return: 1 if the same, otherwise 0
  */
 int compare(char *left, char *right)
@@ -37,5 +37,5 @@ int is_palindrome(char *s)
 {
 	int len = _strlen(s);
 
-	return (compare (s, (s + len - 1)));
+	return (compare(s, (s + len - 1)));
 }
