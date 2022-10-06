@@ -10,10 +10,10 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *arr = malloc(nmemb * sizeof(size));
+	void *arr = malloc(nmemb * size);
 
 	if (arr != NULL)
-		memset(arr, 0, nmemb * sizeof(size));
+		memset(arr, 0, nmemb * size);
 	else
 		return (NULL);
 	if (nmemb == 0 || size == 0)
