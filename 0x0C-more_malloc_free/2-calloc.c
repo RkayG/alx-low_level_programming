@@ -11,16 +11,16 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *arr = malloc(nmemb * size);
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
 	if (arr == NULL)
 		return (NULL);
-	else
-		memset(arr, 0, nmemb * size);
-	/*for (i = 0; i < nmemb * size; i++)
-		*(arr + i) = 0;*/
+
+	for (i = 0; i < nmemb * size; i++)
+		*((char *)arr + i) = 0;
 
 	return (arr);
 }
