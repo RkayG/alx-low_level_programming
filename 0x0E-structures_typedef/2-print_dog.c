@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <stdio.h>
 #include "dog.h"
 
@@ -8,12 +9,10 @@
  */
 void print_dog(struct dog *d)
 {
-	d = malloc(sizeof(struct dog);
-
 	if (d == NULL)
 		return;
 	if (d->name == NULL)
-		printf("Name: (nil)\n");
+		d->name = "(nil)";
 	if (d->age <= 0)
 		printf("(nil)\n");
 	if (d->owner == NULL)
