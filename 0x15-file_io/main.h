@@ -7,6 +7,7 @@
 #include <sys/stat.h> /* open, creat */
 #include <fcntl.h> /* open, creat */
 #include <stdlib.h> /* malloc */
+#include <string.h> /* strlen */
 
 ssize_t read_textfile(const char *filename, size_t letters);
 
